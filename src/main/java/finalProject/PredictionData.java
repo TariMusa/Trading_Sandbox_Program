@@ -49,7 +49,7 @@ public  class PredictionData {
     // Method to get the prediction file path based on ticker and sentiment
     public static String getPredictionFile(String ticker, String sentiment) {
             // replace with your own file path
-        String baseDirectory = "/Users/tariromusarandega/Library/CloudStorage/OneDrive-St.LawrenceUniversity/TariMusa/FinalProject/src/main/java/finalProject/"; // Adjust the base directory as needed
+        String baseDirectory = "/your/base/directory"; // Adjust the base directory as needed
         String fileName = ticker + "_" + sentiment + ".csv";
         String filePath = baseDirectory + fileName;
 
