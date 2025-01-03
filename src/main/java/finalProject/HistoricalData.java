@@ -42,7 +42,7 @@ public class HistoricalData {
 
     // Load historical data from CSV file
     public static void loadHistoricalData(String filePath) {
-        try (BufferedReader br = new BufferedReader(new FileReader("/Users/tariromusarandega/Library/CloudStorage/OneDrive-St.LawrenceUniversity/TariMusa/FinalProject/src/main/java/finalProject/prediction_df.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("prediction_df.csv"))) {
             String headerLine = br.readLine();
             if (headerLine == null) {
                 System.err.println("File is empty!");
@@ -90,7 +90,7 @@ public class HistoricalData {
 
 
     public static void main(String[] args) throws IOException {
-        String filePath = "/Users/tariromusarandega/Library/CloudStorage/OneDrive-St.LawrenceUniversity/TariMusa/FinalProject/src/main/java/finalProject/prediction_df.csv"; // Replace with your actual file path
+        String filePath = "prediction_df.csv"; // Replace with your actual file path
         loadHistoricalData(filePath);
 
         // Example: Retrieve historical data for AAPL
